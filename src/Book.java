@@ -1,41 +1,39 @@
-<<<<<<< HEAD
+package Proiect_SP;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
 public class Book {
-    String title;
-    Book []
-    public Book(String title) {
-        this.title = title;
+    private String name;
+    private List<Author> authors = new ArrayList<>();
+    private List<Chapter> chapters = new ArrayList<>();
+    private TableOfContents toc;
+
+    public Book(String name) {
+        this.name = name;
     }
 
+    public void print() {
 
-    public void addAuthor(Author x) {
+        System.out.println( "Name: " + name );
+        System.out.print("Authors: ");
+        for(Author author : authors)
+            author.print();
     }
 
-    public int createChapter(String s) {
-        return 0;
+    public void addAuthor(Author author) {
+        this.authors.add(author);
     }
 
-    public Chapter getChapter(int indexChapterOne) {
-
+    public int createChapter(String chapter) {
+        Chapter c = new Chapter(chapter, this);
+        this.chapters.add(c);
+        return chapters.indexOf(c);
     }
+
+    public Chapter getChapter(int indexChapter) {
+        return chapters.get(indexChapter);
+    }
+
 }
-=======
-public class Book {
-    String title;
-    Book []
-    public Book(String title) {
-        this.title = title;
-    }
-
-
-    public void addAuthor(Author x) {
-    }
-
-    public int createChapter(String s) {
-        return 0;
-    }
-
-    public Chapter getChapter(int indexChapterOne) {
-
-    }
-}
->>>>>>> 0ec156751f101f11a2e00a91211c3ed798b00e62

@@ -1,17 +1,30 @@
-<<<<<<< HEAD
-public class Chapter {
-    String chapterName;
+package Proiect_SP;
 
-    public Chapter(String chapterName) {
-        this.chapterName = chapterName;
-    }
-}
-=======
-public class Chapter {
-    String chapterName;
+import java.util.ArrayList;
+import java.util.List;
 
-    public Chapter(String chapterName) {
-        this.chapterName = chapterName;
+public class Chapter {
+    private String name;
+    private List<SubChapter> subChapters = new ArrayList<>();
+    private Book book;
+
+    public Chapter(String name, Book book) {
+        this.name = name;
+        this.book = book;
     }
+
+    public void print() {
+        System.out.println("Chapter with name: " + name);
+    }
+
+    public int createSubChapter(String subChapter) {
+        SubChapter sc = new SubChapter(subChapter, this);
+        this.subChapters.add(sc);
+        return subChapters.indexOf(sc);
+    }
+
+    public SubChapter getSubChapter(int indexSubChapter) {
+        return subChapters.get(indexSubChapter);
+    }
+
 }
->>>>>>> 0ec156751f101f11a2e00a91211c3ed798b00e62

@@ -1,27 +1,18 @@
-<<<<<<< HEAD
+package Proiect_SP;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Author {
-    String name;
+    private String name;
+    private List<Book> books = new ArrayList<>();
 
     public Author(String name) {
         this.name = name;
     }
 
-    @Override
-    public String toString() {
-        return "Author" + name + '\'';
-    }
-}
-=======
-public class Author {
-    String name;
-
-    public Author(String name) {
-        this.name = name;
+    public void print() {
+        System.out.println( name );
     }
 
-    @Override
-    public String toString() {
-        return "Author" + name + '\'';
-    }
 }
->>>>>>> 0ec156751f101f11a2e00a91211c3ed798b00e62
