@@ -10,3 +10,7 @@ https://github.com/AndreiDalinesc/Sp---laborator/tree/477ae0133a37178967ff4b458c
 
 - remove the Chapter and Subchapter classes, as they are no longer in used
 - class Image should have only the name attribute
+
+# Feedback lab4:
+
+no content
