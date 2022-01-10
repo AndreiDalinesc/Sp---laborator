@@ -1,6 +1,5 @@
 package Proiect_SP;
 
-
 public class TableOfContents extends Element{
     String title;
 

@@ -6,6 +6,7 @@ public class Paragraph extends Element {
 
     public Paragraph(String text) {
         this.text = text;
+//		this.subChapter = sc;
     }
 
     public void print() {

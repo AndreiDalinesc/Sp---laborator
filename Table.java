@@ -7,6 +7,7 @@ public class Table extends Element {
 
     public Table(String title) {
         this.title = title;
+//		this.subChapter = sc;
     }
 
     public void print() {
