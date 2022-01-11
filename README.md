@@ -14,3 +14,10 @@ https://github.com/AndreiDalinesc/Sp---laborator/tree/477ae0133a37178967ff4b458c
 # Feedback lab4:
 
 no content
+
+# Feedback lab5:
+
+- good with allignment and singleton
+- no visitor
+
+# Proposed grade: 8
