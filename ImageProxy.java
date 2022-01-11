@@ -1,6 +1,5 @@
 package Proiect_SP;
 
-
 import java.util.concurrent.TimeUnit;
 
 public class ImageProxy extends Element implements Picture{
@@ -42,3 +41,4 @@ public class ImageProxy extends Element implements Picture{
     }
 
 }
+

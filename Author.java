@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Author {
 	private String name;
-	private List<Book> books = new ArrayList< >();
+	private List<Book> books = new ArrayList<>();
 
 	public Author(String name) {
 		this.name = name;

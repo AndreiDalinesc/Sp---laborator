@@ -18,9 +18,9 @@ public class Book extends Section {
 
 	public void print() {
 
-		System.out.println( "Book: " + title + "\n");
+		System.out.println("Book: " + title + "\n");
 		System.out.println("Authors: ");
-		for(Author author : authors)
+		for (Author author : authors)
 			author.print();
 		System.out.println();
 
@@ -42,10 +42,5 @@ public class Book extends Section {
 		this.chapters.add(c);
 		return chapters.indexOf(c);
 	}
-
-	public Chapter getChapter(int indexChapter) {
-		return chapters.get(indexChapter);
-	}
-
 
 }
